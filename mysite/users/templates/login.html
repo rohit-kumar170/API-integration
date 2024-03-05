@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <h1>Login Page</h1>
+    <form method="post">
+        {% csrf_token %} {% for filed in form %} {{filed.name}} {{filed}}
+        <br /><br />
+        {% endfor %}
+        <input type="submit" value="Submit" />
+      </form>
+</html>
